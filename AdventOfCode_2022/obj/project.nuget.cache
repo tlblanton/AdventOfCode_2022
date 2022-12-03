@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "SbTXeLzVs4nQ/Enaf93VZelODFZhU1hZ5Cv4HEAyZZAwTleJmDLHqXEtovAJIzxzn5jFt70phbQBUbF3LNkEzA==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\AdventOfCode_2022\\AdventOfCode_2022\\AdventOfCode_2022.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tyler\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\tyler\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\tyler\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\tyler\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
