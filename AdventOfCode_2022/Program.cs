@@ -15,16 +15,60 @@ internal class Program
         const string day2_test = "day2_test.txt";
         const string day3_inputFile1 = "day3_input1.txt";
         const string day3_test = "day3_test.txt";
+        const string day4_inputFile1 = "day4_input1.txt";
+        const string day4_test = "day4_test.txt";
 
 
         //Day1_ElfCalories(Path.Combine(directory, day1_inputFile1));
         //Day2_RockPaperScissors(Path.Combine(directory, day2_inputFile1));
-        Day3_Rucksacks(Path.Combine(directory, day3_inputFile1));
-
+        //Day3_Rucksacks(Path.Combine(directory, day3_inputFile1));
+        Day4_Cleaning(Path.Combine(directory, day4_inputFile1));
 
 
         Console.ReadKey();
     }
+
+    public static void Day4_Cleaning(string filePath)
+    {
+        string line;
+        var overlappingRangeCount = 0;
+
+        using(var reader = new StreamReader(filePath))
+        {
+            while((line = reader.ReadLine()) != null)
+            {
+                var ranges = line.Split(',');
+
+                var range1 = ranges[0].Split('-').Select(x => Convert.ToInt32(x)).ToList();
+                var range2 = ranges[1].Split('-').Select(x => Convert.ToInt32(x)).ToList();
+
+
+                if (range1[1] < range2[0] || range2[1] < range1[0])
+                {
+                    continue;
+                }
+                else
+                {
+                    overlappingRangeCount++;
+                }
+
+
+                //if (range1[0] <= range2[0] && range1[1] >= range2[1])
+                //{
+                //    overlappingRangeCount++;
+                //}
+                //else if (range2[0] <= range1[0] && range2[1] >= range1[1])
+                //{
+                //    overlappingRangeCount++;
+                //}
+            }
+        }
+
+        Console.WriteLine($"The number of shifts with any overlap is {overlappingRangeCount}");
+    }
+
+
+
 
     public static void Day3_Rucksacks(string filePath)
     {
